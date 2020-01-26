@@ -7,7 +7,9 @@ sourceFile = 'source.txt'
 source = open(sourceFile, 'r')
 for line in source:
     repoDir= line.rsplit("/")[-1].rsplit(".")[0]
-    Repo.clone_from(line, repoDir)
+    print("Cloning" + line + " in " + repoDir)
+    os.system('git clone ' + line)
+    #Repo.clone_from(line, repoDir)
 
 result = open ("results.txt", "a+")
 for root, dirs, files in os.walk("."):
@@ -19,5 +21,5 @@ for root, dirs, files in os.walk("."):
            for line in f:
                if "Framework" in line:
                    temp = line
-                   result.write(line + " Found in " + x + "\n")
+                   result.write(line.rstrip() + " Found in " + x + "\n")
                    print("line written in file")

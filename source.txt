@@ -1,2 +1,3 @@
-https://github.com/npsoni88/terraform-aws.git
-https://github.com/npsoni88/sample-configs.git
+https://github.com/npsoni88/terraform-aws.git/
+https://github.com/npsoni88/ot2.git/
+https://github.com/npsoni88/sample-configs.git/
