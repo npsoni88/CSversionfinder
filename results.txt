@@ -1,2 +1,16 @@
 "Framework=0.3"
  Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config
+"Framework=0.3"
+ Found in .\dir2\app.config

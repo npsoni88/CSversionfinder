@@ -1,13 +1,23 @@
 import os
+from git import Repo
 
-results = {}
+#Download repositories
+
+sourceFile = 'source.txt'
+source = open(sourceFile, 'r')
+for line in source:
+    repoDir= line.rsplit("/")[-1].rsplit(".")[0]
+    Repo.clone_from(line, repoDir)
+
 result = open ("results.txt", "a+")
 for root, dirs, files in os.walk("."):
    for name in files:
        if "app.config" in name:
            x = os.path.join(root, name)
+           print(x)
            f = open(x,"r")
            for line in f:
                if "Framework" in line:
                    temp = line
                    result.write(line + " Found in " + x + "\n")
+                   print("line written in file")
